@@ -1,0 +1,13 @@
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\bin\Debug\netcoreapp3.1\SecondAttempt.exe
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\bin\Debug\netcoreapp3.1\SecondAttempt.deps.json
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\bin\Debug\netcoreapp3.1\SecondAttempt.runtimeconfig.json
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\bin\Debug\netcoreapp3.1\SecondAttempt.runtimeconfig.dev.json
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\bin\Debug\netcoreapp3.1\SecondAttempt.dll
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\bin\Debug\netcoreapp3.1\SecondAttempt.pdb
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\obj\Debug\netcoreapp3.1\SecondAttempt.csprojAssemblyReference.cache
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\obj\Debug\netcoreapp3.1\SecondAttempt.AssemblyInfoInputs.cache
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\obj\Debug\netcoreapp3.1\SecondAttempt.AssemblyInfo.cs
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\obj\Debug\netcoreapp3.1\SecondAttempt.csproj.CoreCompileInputs.cache
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\obj\Debug\netcoreapp3.1\SecondAttempt.dll
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\obj\Debug\netcoreapp3.1\SecondAttempt.pdb
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\obj\Debug\netcoreapp3.1\SecondAttempt.genruntimeconfig.cache
