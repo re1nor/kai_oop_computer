@@ -16,16 +16,48 @@ namespace SecondAttempt // Базовый класс Computer
         SSD,
         Other
     }
-    class Computer
+    abstract class Computer : ISellComputer
     {
-        public string Maker; // поле произодитель
+        public string Maker;
         public TypeProcessor Processor;
-        public int Ram;
+        private int ram;
+        public int Ram
+        {
+            // Проверка объема на нулевое и отрицательное значение. 
+            set 
+            {
+                if (value > 0)
+                {
+                    return;
+                }
+                else
+                {
+                    Console.WriteLine($"Объем оперативной памяти не может быть {value}!");
+                }           
+            }
+            get
+            {
+                return ram;
+            }
+        }
         public TypeDrive Drive;
 
-        public Computer(string Maker, TypeProcessor Processor, int ram, Type Drive)
+        // Создаем конструктор
+        public Computer(string Maker, TypeProcessor Processor, int ram, TypeDrive Drive)
         {
+            this.Maker = Maker;
+            this.Processor = Processor;
+            this.ram = ram;
+            this.Drive = Drive;
             Console.WriteLine($"Производитель: {Maker} / Процессор: {Processor} / Объем ОЗУ: {ram} / Накопитель: {Drive}");
+        }
+        public void Used()
+        {
+            Console.WriteLine("Компьютер используется");
+        }
+        public void Upgrade()
+        {
+            Console.WriteLine("Компьютер улучшен");
         }
     }
 }
