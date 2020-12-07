@@ -16,7 +16,7 @@ namespace SecondAttempt // Базовый класс Computer
         SSD,
         Other
     }
-    abstract class Computer : ISellComputer
+    abstract class Computer : IActions
     {
         public string Maker;
         public TypeProcessor Processor;
@@ -37,7 +37,7 @@ namespace SecondAttempt // Базовый класс Computer
             }
             get
             {
-                return ram;
+                return Ram;
             }
         }
         public TypeDrive Drive;
@@ -49,7 +49,6 @@ namespace SecondAttempt // Базовый класс Computer
             this.Processor = Processor;
             this.ram = ram;
             this.Drive = Drive;
-            Console.WriteLine($"Производитель: {Maker} / Процессор: {Processor} / Объем ОЗУ: {ram} / Накопитель: {Drive}");
         }
         public void Used()
         {
@@ -58,6 +57,10 @@ namespace SecondAttempt // Базовый класс Computer
         public void Upgrade()
         {
             Console.WriteLine("Компьютер улучшен");
+        }
+        public virtual void GetInfo()
+        {
+            Console.WriteLine($"Производитель: {Maker} / Процессор: {Processor} / Объем ОЗУ: {ram} / Накопитель: {Drive}");
         }
     }
 }
