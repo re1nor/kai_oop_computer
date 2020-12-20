@@ -28,7 +28,7 @@ namespace SecondAttempt
             #endregion
             Console.WriteLine();
             #region TestWarehouse
-            Computer[] bs = { 
+            Computer[] cs = { 
             new Game("HyperPC", TypeProcessor.AMD,8, TypeDrive.HDD, TypeVideocard.Radeon,1919),
             new Notebook("Dell", TypeProcessor.Intel,16, TypeDrive.SSD, 15.6, 2.5 ),
             new Game("IBM", TypeProcessor.Other,27, TypeDrive.Other, TypeVideocard.Radeon,1424),
@@ -57,10 +57,10 @@ namespace SecondAttempt
             Random rnd = new Random();
 
             Thread[] thArray = new Thread[cl.Length];
-            ActionsReader[] acts = new ActionsReader[cl.Length];
+            ActionsClient[] acts = new ActionsClient[cl.Length];
             for (int i = 0; i < cl.Length; i++)
             {
-                acts[i] = new ActionsReader(cl[i], bs[rnd.Next(bs.Length)], Wh, 1200 + (i % 2) * 300);
+                acts[i] = new ActionsClient(cl[i], cs[rnd.Next(cs.Length)], Wh, 1200 + (i % 2) * 300);
                 acts[i].InitEvent();
                 thArray[i] = new Thread(acts[i].DoActions);
                 thArray[i].Start();
@@ -94,7 +94,7 @@ namespace SecondAttempt
             Console.WriteLine();
             Console.WriteLine("-----------------------------");
             Console.WriteLine();
-            Wh.WriteToXml_Journal("out2.xml");
+            Wh.WriteToXml_Journal("out.xml");
             
             #endregion
             Console.WriteLine();

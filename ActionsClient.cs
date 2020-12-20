@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace SecondAttempt
 {
     public delegate void EventClient(Operation evClient);
-    class ActionsReader
+    class ActionsClient
     {
         public Clients cl; // Источник события - клиент
         public event EventClient Event_actions;
@@ -17,8 +17,8 @@ namespace SecondAttempt
         static readonly Random rnd = new Random();
 
 
-        public ActionsReader() { cl = null; comp_use = null; Wh = null; timing = 0; } //Пустой конструктор 
-        public ActionsReader(Clients c, Computer k, WareHouseWithEvents wh, int t) //Конструктор 
+        public ActionsClient() { cl = null; comp_use = null; Wh = null; timing = 0; } //Пустой конструктор 
+        public ActionsClient(Clients c, Computer k, WareHouseWithEvents wh, int t) //Конструктор 
         {
             cl = c; comp_use = k; Wh = wh; timing = t;
         }

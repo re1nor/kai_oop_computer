@@ -137,7 +137,7 @@ namespace SecondAttempt
             _objs.Remove(item);
         }
 
-        public IEnumerable<Computer> ViewVideocardByTypeVideocard(TypeVideocard selectTM)
+        public IEnumerable<Computer> ViewGameByTypeVideocard(TypeVideocard selectTM)
         {
             foreach (Computer curcomp in _objs)
             {
@@ -148,7 +148,7 @@ namespace SecondAttempt
                     }
             }
         }
-        public IEnumerable<Computer> ViewDurationByDuration(double selectTM)
+        public IEnumerable<Computer> ViewNotebookByDuration(double selectTM)
         {
             foreach (Computer curcomp in _objs)
             {
