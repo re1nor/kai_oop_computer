@@ -11,3 +11,10 @@ D:\PROJECT\VS\SecondAttempt\SecondAttempt\obj\Debug\netcoreapp3.1\SecondAttempt.
 D:\PROJECT\VS\SecondAttempt\SecondAttempt\obj\Debug\netcoreapp3.1\SecondAttempt.dll
 D:\PROJECT\VS\SecondAttempt\SecondAttempt\obj\Debug\netcoreapp3.1\SecondAttempt.pdb
 D:\PROJECT\VS\SecondAttempt\SecondAttempt\obj\Debug\netcoreapp3.1\SecondAttempt.genruntimeconfig.cache
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\PROJECT\VS\SecondAttempt\SecondAttempt\obj\Debug\netcoreapp3.1\SecondAttempt.csproj.CopyComplete

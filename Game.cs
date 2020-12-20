@@ -14,7 +14,7 @@ namespace SecondAttempt
     {
         public TypeVideocard Videocard;
         private double power;
-        public double Power
+        public double Power 
         {
             // Проверка мощности видеокарты на нулевое и отрицательное значение. 
             set
@@ -37,7 +37,7 @@ namespace SecondAttempt
         {
             this.Videocard = Videocard;
             this.Power = Power;
-            Console.WriteLine($"Производитель:{Maker}/ Процессор: {Processor}/ Объем ОЗУ: {ram}gb/ Накопитель: {Drive}/Видеокарта: {Videocard}/ Мощность видеокарты: {Power} tflops");
+            Console.WriteLine($"Maker:{Maker}/ Processor: {Processor}/ Ram: {ram}gb/ Drive: {Drive}/Videocard: {Videocard}/ Power: {Power} tflops");
         }
         public override void GetInfo()
         {

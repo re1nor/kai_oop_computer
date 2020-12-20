@@ -1,6 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace SecondAttempt
 {
@@ -79,6 +84,7 @@ namespace SecondAttempt
 
         public void Reset()
         {
+
             _currentobj = default(T);
             _pos = -1;
         }
@@ -118,5 +124,42 @@ namespace SecondAttempt
             }
         }
     }
-} 
+    class WareHouse : Storage<Computer>
+    {
+        public WareHouse() : base() { }
+        public void AddComputer(Computer item)
+        {
+            _objs.Add(item);
+        }
+
+        public void DeleteComputer(Computer item)
+        {
+            _objs.Remove(item);
+        }
+
+        public IEnumerable<Computer> ViewVideocardByTypeVideocard(TypeVideocard selectTM)
+        {
+            foreach (Computer curcomp in _objs)
+            {
+                if (curcomp is Game)
+                    if (((Game)curcomp).Videocard == selectTM)
+                    {
+                        yield return curcomp;
+                    }
+            }
+        }
+        public IEnumerable<Computer> ViewDurationByDuration(double selectTM)
+        {
+            foreach (Computer curcomp in _objs)
+            {
+                if (curcomp is Notebook)
+                    if (((Notebook)curcomp).Duration == selectTM)
+                    {
+                        yield return curcomp;
+                    }
+            }
+        }
+    }
+
+}
 

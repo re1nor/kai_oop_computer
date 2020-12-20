@@ -13,7 +13,7 @@ namespace SecondAttempt
         {
             this.Diagonal = Diagonal;
             this.Duration = Duration;
-            Console.WriteLine($"Производитель:{Maker}/ Процессор: {Processor}/ Объем ОЗУ: {ram}gb/ Накопитель: {Drive}/Диагональ матрицы: {Diagonal}/ Продолжительность работы: {Duration} часов");
+            Console.WriteLine($"Maker:{Maker}/ Processor: {Processor}/ Ram: {ram}gb/ Drive: {Drive}/Diagonal: {Diagonal}/ Duration: {Duration} hours");
         }
         public override void GetInfo()
         {

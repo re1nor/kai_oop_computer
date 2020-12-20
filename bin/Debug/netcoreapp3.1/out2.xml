@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations>
+ <Operation ID="1">
+  <Type>On</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Petr Konstantinovich</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Game</TypeComputer>
+   <Maker>IBM</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="2">
+  <Type>On</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Dinara</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Asus</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="3">
+  <Type>On</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Diana HydraBoo</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Dell</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="4">
+  <Type>StartUse</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Diana HydraBoo</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Dell</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="5">
+  <Type>On</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Bulat</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Acer</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="6">
+  <Type>On</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Danil</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Acer</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="7">
+  <Type>StartUse</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Petr Konstantinovich</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Game</TypeComputer>
+   <Maker>IBM</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="8">
+  <Type>StartUse</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Bulat</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Acer</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="9">
+  <Type>StartUse</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Dinara</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Asus</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="10">
+  <Type>On</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Alexandr</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Asus</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="11">
+  <Type>StopUse</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Diana HydraBoo</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Dell</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="12">
+  <Type>StartUse</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Danil</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Acer</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="13">
+  <Type>StopUse</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Bulat</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Acer</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="14">
+  <Type>Off</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Bulat</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Acer</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="15">
+  <Type>StopUse</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Petr Konstantinovich</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Game</TypeComputer>
+   <Maker>IBM</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="16">
+  <Type>StartUse</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Alexandr</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Asus</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="17">
+  <Type>StopUse</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Dinara</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Asus</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="18">
+  <Type>Off</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Diana HydraBoo</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Dell</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="19">
+  <Type>Off</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Dinara</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Asus</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="20">
+  <Type>StopUse</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Danil</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Acer</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="21">
+  <Type>Off</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Petr Konstantinovich</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Game</TypeComputer>
+   <Maker>IBM</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="22">
+  <Type>Off</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Danil</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Acer</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="23">
+  <Type>StopUse</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Alexandr</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Asus</Maker>
+  </Computer>
+ </Operation>
+ <Operation ID="24">
+  <Type>Off</Type>
+  <DateTime>
+   <Date>20 декабря 2020 г.</Date>
+   <Time>16:49</Time>
+  </DateTime>
+  <Clients>
+   <Name>Alexandr</Name>
+  </Clients>
+  <Computer>
+   <TypeComputer>Notebook</TypeComputer>
+   <Maker>Asus</Maker>
+  </Computer>
+ </Operation>
+</Operations>

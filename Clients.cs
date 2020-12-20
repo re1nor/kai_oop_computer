@@ -4,21 +4,24 @@ using System.Text;
 
 namespace SecondAttempt
 {
-    class Clients : IActions
+    public class Clients : IActions
     {
         public string FullName;
-        public double DateOfUse;
-        public double TimeOfUse;
+        public bool Active { get; set; }
+        private static int ID = 0;
+        private int Id_clients;
+        public int IDClients { get { return Id_clients; } }
+       
+        public override string ToString()
+        {
+            return FullName;
+        }
 
-        public Clients(string FullName, double DateOfUse, double TimeOfUse)
+        public Clients(string FullName)
         {
             this.FullName = FullName;
-            this.DateOfUse = DateOfUse;
-            this.TimeOfUse = TimeOfUse;
-        }
-        public void GetInfo()
-        {
-            Console.WriteLine($"ФИО:{FullName}; Дата: {DateOfUse}; Время пользования: {TimeOfUse} часов");
+            ID++;
+            Id_clients = ID;
         }
         public void Used()
         {
