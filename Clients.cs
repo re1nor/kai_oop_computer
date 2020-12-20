@@ -9,7 +9,7 @@ namespace SecondAttempt
         public string FullName;
         public bool Active { get; set; }
         private static int ID = 0;
-        private int Id_clients;
+        private readonly int Id_clients;
         public int IDClients { get { return Id_clients; } }
        
         public override string ToString()

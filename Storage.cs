@@ -17,14 +17,14 @@ namespace SecondAttempt
             _pos = -1;
         }
 
-        T _currentobj = default(T);
+        T _currentobj = default;
         protected List<T> _objs; //Массив хранящий все Obj находящиеся в хранилище
         int _pos;
 
         public object Current { get { return _currentobj; } }
         public void Dispose()
         {
-            _currentobj = default(T);
+            _currentobj = default;
             _objs.Clear();
             _pos = -1;
         }
@@ -85,7 +85,7 @@ namespace SecondAttempt
         public void Reset()
         {
 
-            _currentobj = default(T);
+            _currentobj = default;
             _pos = -1;
         }
 
@@ -141,8 +141,8 @@ namespace SecondAttempt
         {
             foreach (Computer curcomp in _objs)
             {
-                if (curcomp is Game)
-                    if (((Game)curcomp).Videocard == selectTM)
+                if (curcomp is Game game)
+                    if (game.Videocard == selectTM)
                     {
                         yield return curcomp;
                     }
@@ -152,8 +152,8 @@ namespace SecondAttempt
         {
             foreach (Computer curcomp in _objs)
             {
-                if (curcomp is Notebook)
-                    if (((Notebook)curcomp).Duration == selectTM)
+                if (curcomp is Notebook notebook)
+                    if (notebook.Duration == selectTM)
                     {
                         yield return curcomp;
                     }

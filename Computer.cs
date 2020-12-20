@@ -20,7 +20,7 @@ namespace SecondAttempt // Базовый класс Computer
     {
         public string Maker;
         public TypeProcessor Processor;
-        private int ram;
+        private readonly int ram;
         public int Ram
         {
             // Проверка объема на нулевое и отрицательное значение. 
@@ -42,7 +42,7 @@ namespace SecondAttempt // Базовый класс Computer
         }
         public TypeDrive Drive;
         private static int ID = 0;
-        private int Id_comp;
+        private readonly int Id_comp;
         public int IDComp { get { return Id_comp; } }
 
         // Создаем конструктор

@@ -10,11 +10,11 @@ namespace SecondAttempt
     class ActionsReader
     {
         public Clients cl; // Источник события - клиент
-        public event EventClient event_actions;
+        public event EventClient Event_actions;
         public WareHouseWithEvents Wh;
         public Computer comp_use; // Компьютер, с которой взаимодействует читатель
         public int timing;
-        static Random rnd = new Random();
+        static readonly Random rnd = new Random();
 
 
         public ActionsReader() { cl = null; comp_use = null; Wh = null; timing = 0; } //Пустой конструктор 
@@ -25,7 +25,7 @@ namespace SecondAttempt
         // Регистрация обработчика событий 
         public void InitEvent()
         {
-            if (Wh != null) event_actions += Wh.OnEventComputer;
+            if (Wh != null) Event_actions += Wh.OnEventComputer;
         }
 
         // Действие - использование
@@ -33,21 +33,25 @@ namespace SecondAttempt
         {
             if (curcomp == null) { return; }
             if (clients == null) { return; }
-            Operation ops = new Operation();
-            ops.to = TypeOperation.StartUse;
-            ops.cl = clients;
-            ops.comp = curcomp;
-            ops.Message = "Начало использования";
+            Operation ops = new Operation
+            {
+                to = TypeOperation.StartUse,
+                cl = clients,
+                comp = curcomp,
+                Message = "Начало использования"
+            };
             clients.Active = false;
 
-            if (event_actions != null) event_actions(ops);
+            Event_actions?.Invoke(ops);
             Thread.Sleep(intervalUse);
-            ops = new Operation();
-            ops.to = TypeOperation.StopUse;
-            ops.cl = clients;
-            ops.comp = curcomp;
-            ops.Message = "Конец пользования";
-            if (event_actions != null) event_actions(ops);
+            ops = new Operation
+            {
+                to = TypeOperation.StopUse,
+                cl = clients,
+                comp = curcomp,
+                Message = "Конец пользования"
+            };
+            Event_actions?.Invoke(ops);
             clients.Active = true;
   
         }
@@ -55,23 +59,27 @@ namespace SecondAttempt
         public void Off(Clients clients, Computer curcomp)
         {
             if (clients == null) { return; }
-            Operation ops = new Operation();
-            ops.to = TypeOperation.Off;
-            ops.cl = clients;
-            ops.comp = curcomp;
-            ops.Message = "Выключили компьютер";
-            if (event_actions != null) event_actions(ops);
+            Operation ops = new Operation
+            {
+                to = TypeOperation.Off,
+                cl = clients,
+                comp = curcomp,
+                Message = "Выключили компьютер"
+            };
+            Event_actions?.Invoke(ops);
         }
         //Действие - Включение
         public void On(Clients clients, Computer curcomp)
         {
             if (clients == null) { return; }
-            Operation ops = new Operation();
-            ops.to = TypeOperation.On;
-            ops.cl = clients;
-            ops.comp = curcomp;
-            ops.Message = "Включили компьютер";
-            if (event_actions != null) event_actions(ops);
+            Operation ops = new Operation
+            {
+                to = TypeOperation.On,
+                cl = clients,
+                comp = curcomp,
+                Message = "Включили компьютер"
+            };
+            Event_actions?.Invoke(ops);
         }
 
         //Генерация событий

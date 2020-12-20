@@ -105,9 +105,11 @@ namespace SecondAttempt
         //Журнал XML
         public void WriteToXml_Journal(string namefile)
         {
-            XmlWriterSettings settings = new XmlWriterSettings();
-            settings.Indent = true;
-            settings.IndentChars = (" ");
+            XmlWriterSettings settings = new XmlWriterSettings
+            {
+                Indent = true,
+                IndentChars = (" ")
+            };
             XmlWriter writer = XmlWriter.Create(namefile, settings);
             int id = 1;
             writer.WriteStartElement("Operations");
@@ -339,10 +341,11 @@ namespace SecondAttempt
 
                 string sql = "Delete from Operations where IdOp < @id";
 
-                SqlCommand cmd = new SqlCommand();
-
-                cmd.Connection = con;
-                cmd.CommandText = sql;
+                SqlCommand cmd = new SqlCommand
+                {
+                    Connection = con,
+                    CommandText = sql
+                };
 
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
 
